@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Alex Peterson | <%= title %></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css"/>
+    </noscript>
+    <link rel="icon" href="<%= icon %>">
+</head>
+<body class="landing is-preload">
+
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+    <%- include(header) %>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <h2><%= title %></h2>
+            <p>A brief one sentence overview.</p>
+
+        </div>
+        <a href="#Details" class="more scrolly">Learn More</a>
+    </section>
+
+
+    <section class="wrapper style5" id="Details">
+        <h2>Summary</h2>
+        <p>This is my descriptions <br>
+            consider adding some images!</p>
+        <hr>
+    </section>
+
+
+    <%- include('../partials/footer') %>
+</div>
+
+<%- include('../partials/bottomimports') %>
+
+</body>
+</html>
